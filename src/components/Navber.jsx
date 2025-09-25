@@ -11,7 +11,7 @@ const Navber = () => {
                 {/* Logo */}
                 <div className="flex items-center space-x-2">
                     <img
-                        src="./logo.png" // replace with your logo path
+                        src="./logo.png" 
                         alt="ScapeSync"
                         className="w-36 object-cover "
                     />
