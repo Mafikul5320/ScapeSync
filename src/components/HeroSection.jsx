@@ -1,6 +1,8 @@
 import React from "react";
 import { FaApple, FaRegCalendarCheck } from "react-icons/fa";
-import { Calendar, Activity, BarChart3, ShieldCheck } from "lucide-react";
+import { AiOutlineAim } from "react-icons/ai";
+import { BsGraphDown } from "react-icons/bs";
+import { FiShield } from "react-icons/fi";
 
 
 const HeroSection = () => {
@@ -12,19 +14,19 @@ const HeroSection = () => {
                 "Streamlined booking process for clients with service catalogs and availability.",
         },
         {
-            icon: <Activity className="w-6 h-6 text-[#2f822a]" />,
+            icon: <AiOutlineAim className="w-6 h-6 text-[#2f822a]" />,
             title: "Real-Time Tracking",
             description:
                 "Monitor job progress, employee hours, and project timelines with live updates.",
         },
         {
-            icon: <BarChart3 className="w-6 h-6 text-[#2f822a]" />,
+            icon: <BsGraphDown className="w-6 h-6 text-[#2f822a]" />,
             title: "Performance Analytics",
             description:
                 "Comprehensive reporting and insights to improve business operations and efficiency.",
         },
         {
-            icon: <ShieldCheck className="w-6 h-6 text-[#2f822a]" />,
+            icon: <FiShield className="w-6 h-6 text-[#2f822a]" />,
             title: "Secure & Reliable",
             description:
                 "Enterprise-grade security with 99.9% uptime guarantee and data protection.",
@@ -101,7 +103,11 @@ const HeroSection = () => {
                 <div className="w-11/13 mx-auto">
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
                         {features.map((feature, index) => (
-                            <div key={index} className="border-r-gray-200 border-r">
+                            <div
+                                key={index}
+                                className={`${index !== features.length - 1 ? "border-r border-r-gray-100" : ""
+                                    } pr-6`}
+                            >
                                 <div className="flex items-center justify-center w-12 h-12 rounded-md bg-[#ecfceb]">
                                     {feature.icon}
                                 </div>
@@ -114,6 +120,7 @@ const HeroSection = () => {
                             </div>
                         ))}
                     </div>
+
                 </div>
             </section>
         </div>

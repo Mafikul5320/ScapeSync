@@ -32,39 +32,39 @@ const FAQSection = () => {
   };
 
   return (
-    <section className="py-20 bg-gradient-to-b from-white to-green-50/70">
-      <div className="max-w-4xl mx-auto px-6">
+    <section className="py-16 sm:py-20 bg-gradient-to-b from-white to-green-50/70">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Heading */}
-        <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-gray-800">
           Frequently Asked Questions
         </h2>
-        <p className="mt-3 text-gray-500 text-center text-sm md:text-base">
+        <p className="mt-2 sm:mt-3 text-gray-500 text-center text-sm sm:text-base">
           Quick answers to help you get the most out of our app.
         </p>
 
         {/* FAQ Items */}
-        <div className="mt-12 space-y-4">
+        <div className="mt-10 sm:mt-12 space-y-3 sm:space-y-4">
           {faqs.map((faq, idx) => (
             <div
               key={idx}
-              className=" bg-white shadow overflow-hidden border border-[#C7E6C5] rounded-2xl"
+              className="bg-white shadow border border-[#C7E6C5] rounded-xl sm:rounded-2xl overflow-hidden"
             >
               {/* Question */}
               <button
                 onClick={() => toggleFAQ(idx)}
-                className="w-full flex justify-between items-center px-6 py-4 text-left focus:outline-none"
+                className="w-full flex justify-between items-center px-4 sm:px-6 py-3 sm:py-4 text-left focus:outline-none"
               >
-                <span className="font-medium text-gray-800">
+                <span className="font-medium text-gray-800 text-sm sm:text-base md:text-lg">
                   {faq.question}
                 </span>
-                <span className="text-gray-500 text-xl">
+                <span className="text-gray-500 text-lg sm:text-xl">
                   {openIndex === idx ? "−" : "+"}
                 </span>
               </button>
 
               {/* Answer */}
               {openIndex === idx && (
-                <div className="px-6 pb-4 text-gray-600 text-sm leading-relaxed">
+                <div className="px-4 sm:px-6 pb-3 sm:pb-4 text-gray-600 text-sm sm:text-base leading-relaxed">
                   {faq.answer}
                 </div>
               )}
