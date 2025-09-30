@@ -53,7 +53,8 @@ const BuildEveryone = () => {
                         bg-gradient-to-tr from-green-300 via-green-200 to-transparent 
                         opacity-30 bottom-6 right-0 blur-[60px] md:blur-[80px] z-0">
                     </div>
-
+                    <div className="absolute -bottom-6 left-0 w-full h-26 
+      bg-gradient-to-b from-white/0 via-white to-white z-50 pointer-events-none"></div>
                     {/* Phone image */}
                     <img className="relative z-10 w-[220px] sm:w-[280px] md:w-auto" src="/Mobile_two.png" alt="" />
                 </div>
@@ -67,7 +68,8 @@ const BuildEveryone = () => {
                         bg-gradient-to-tr from-green-300 via-green-200 to-transparent 
                         opacity-30 bottom-6 right-0 blur-[60px] md:blur-[80px] z-0">
                     </div>
-
+                    <div className="absolute -bottom-6 left-0 w-full h-26 
+      bg-gradient-to-b from-white/0 via-white to-white z-50 pointer-events-none"></div>
                     {/* Phone image */}
                     <img className="relative z-10 w-[220px] sm:w-[280px] md:w-auto" src="/Mobile_three.png" alt="" />
                 </div>
@@ -135,14 +137,14 @@ const BuildEveryone = () => {
                         bg-gradient-to-tr from-green-300 via-green-200 to-transparent 
                         opacity-30 bottom-6 right-0 blur-[60px] md:blur-[80px] z-0">
                     </div>
-
+                    <div className="absolute -bottom-6 left-0 w-full h-26 
+      bg-gradient-to-b from-white/0 via-white to-white z-50 pointer-events-none"></div>
                     {/* Phone image */}
-                    <img className="relative z-10 w-[220px] sm:w-[280px] md:w-auto" src="/Mobile_three.png" alt="" />
+                    <img className="relative z-10 w-[220px] sm:w-[280px] md:w-auto" src="/Mobile_four.png" alt="" />
                 </div>
             </div>
 
-            {/* Background decorations */}
-            <img className="absolute -right-10 sm:-right-20 md:-right-78 top-10 sm:top-16 md:top-20 w-16 sm:w-24 md:w-auto" src="/round_1.png" alt="" />
+
             <img className="absolute right-20 sm:right-40 md:right-[489px] top-16 sm:top-24 md:top-32 w-12 sm:w-20 md:w-auto" src="/round_2.png" alt="" />
             <img className="absolute left-10 sm:left-20 md:left-[119px] top-20 sm:top-28 md:top-26 w-12 sm:w-20 md:w-auto" src="/round_3.png" alt="" />
         </div>
